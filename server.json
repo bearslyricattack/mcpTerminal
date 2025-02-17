@@ -1,0 +1,48 @@
+{
+  "server": [
+    {
+      "name": "vlogs-server",
+      "version": "1.0.0",
+      "type": "remote",
+      "host": "http://localhost:8428/queryLogsByParams",
+      "description": "Get logs from the API by passing parameters.",
+      "args": [
+        {
+          "key": "time",
+          "value": "10h",
+          "description": "The time filter for logs (e.g., \"10h\")."
+        },
+        {
+          "key": "namespace",
+          "value": "gpu-operator",
+          "description": "The namespace of the application (e.g., \"gpu-operator\")."
+        },
+        {
+          "key": "app",
+          "value": "gpu-operator",
+          "description": "The name of the application (e.g., \"gpu-operator\")."
+        },
+        {
+          "key": "limit",
+          "value": "100",
+          "description": "The limit for the number of logs to retrieve. (e.g., \"20\"). if use this key, please use string type."
+        },
+        {
+          "key": "pod",
+          "value": "pod-123",
+          "description": "The list of pods to query."
+        },
+        {
+          "key": "container",
+          "value": "container-456",
+          "description": "The list of containers to query."
+        },
+        {
+          "key": "keyword",
+          "value": "error",
+          "description": "The keyword to filter logs by."
+        }
+      ]
+    }
+  ]
+}
