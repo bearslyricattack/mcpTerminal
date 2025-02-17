@@ -44,7 +44,7 @@ func getUserInput(scanner *bufio.Scanner) string {
 }
 
 func main() {
-	apiKey := "sk-CBfWiBpsYsSJwmze0063656b2c9d4dE5A94eD750705198Bb"
+	apiKey := ""
 	apiUrl := "https://aiproxy.hzh.sealos.run/v1/chat/completions"
 	model := "deepseek-chat"
 	startConversationLoop(apiKey, apiUrl, model)
