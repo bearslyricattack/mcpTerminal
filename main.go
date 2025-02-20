@@ -32,6 +32,7 @@ func startConversationLoop(apiKey string, apiUrl string, model string) {
 		if tool.HandleToolRequest(response, mcpServers, chatClient) {
 			continue // If a ToolRequest is handled, continue to the next iteration
 		}
+
 		fmt.Println("Assistant:", response)
 	}
 }
